@@ -1,11 +1,13 @@
 package monster.controller;
 import monster.model.MarshmallowMonster;
+import java.util.Scanner;
 public class MonsterController 
 {
 	private MarshmallowMonster firstMonster;
-	
+	private Scanner keyboardInput;
 	public MonsterController()
 	{
+		keyboardInput= new Scanner(System.in);
 		firstMonster = new MarshmallowMonster("herman",1,1.7,1,2,1,true,true);
 	}
 	public void start ()
@@ -19,7 +21,9 @@ public class MonsterController
 		System.out.println("He has " +firstMonster.getAntennaCount() + " antennae.");
 		System.out.println("It is " +firstMonster.getHasHair() + " that he has hair.");
 		System.out.println("It is " +firstMonster.getHasBellyButton() + " that he has a belly button.");
+		String answer =keyboardInput.nextLine();
 	}
+	
 	/*monster name is herman
 	 * has 1 antenna
 	 * has2 legs

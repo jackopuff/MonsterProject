@@ -77,13 +77,37 @@ public class MarshmallowMonster
 	{
 		return antennaCount;
 	}
-/*monster name is herman
- * has 1 antenna
- * has2 legs
- * has 2 arms
- * has 1 nose
- * has 1 eye
- * has belly button
- * has hair
- */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public void setAntennaCount(int antennaCount)
+	{
+		this.antennaCount=antennaCount;
+	}
+	public void setHasBellyButton(boolean hasBellyButton)
+	{
+		this.hasBellyButton=hasBellyButton;
+	}
+	public void setArmCount(double armCount)
+	{
+		this.armCount = armCount;
+	}
+	public void setLegCount(int legCount)
+	{
+		this.legCount=legCount;
+	}
+	public void setNoseCount(int noseCount)
+	{
+		this.noseCount=noseCount;
+	}
+	public void setEyeCount(int eyeCount)
+	{
+		this.eyeCount=eyeCount;
+	}
+	public void setHasHair(boolean hasHair)
+	{
+		this.hasHair=hasHair;
+	}
+	
 }
