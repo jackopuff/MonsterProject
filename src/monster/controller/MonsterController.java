@@ -21,9 +21,20 @@ public class MonsterController
 		System.out.println("He has " +firstMonster.getAntennaCount() + " antennae.");
 		System.out.println("It is " +firstMonster.getHasHair() + " that he has hair.");
 		System.out.println("It is " +firstMonster.getHasBellyButton() + " that he has a belly button.");
+		System.out.println("would you like to change my name??");
 		String answer =keyboardInput.nextLine();
+		if(answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("what do you want my name to be??");
+			String newName=keyboardInput.nextLine();
+			firstMonster.setName(newName);
+		}
+		else
+		{
+			System.out.println("I get to keep my name grrr I don\'t like it angry emoji >:(");
+		}
+		System.out.println(firstMonster);
 	}
-	
 	/*monster name is herman
 	 * has 1 antenna
 	 * has2 legs
